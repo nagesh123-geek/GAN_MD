@@ -27,22 +27,22 @@ class Config:
 # ===============================
 
 # ===============================
-#class ChunkDataset(Dataset):
-#    def __init__(self, npy_file, chunk_size=10000):
-#        data = np.load(npy_file)  # e.g., (500000, 2)
-#        n_full_chunks = data.shape[0] // chunk_size  # only full chunks
-#        data = data[:n_full_chunks * chunk_size]     # drop remainder
-#        self.chunks = np.split(data, n_full_chunks)  # list of (chunk_size, 2)
+class ChunkDataset(Dataset):
+    def __init__(self, npy_file, chunk_size=10000):
+        data = np.load(npy_file)  # e.g., (500000, 2)
+        n_full_chunks = data.shape[0] // chunk_size  # only full chunks
+        data = data[:n_full_chunks * chunk_size]     # drop remainder
+        self.chunks = np.split(data, n_full_chunks)  # list of (chunk_size, 2)
 
-#    def __len__(self):
-#        return len(self.chunks)
+    def __len__(self):
+        return len(self.chunks)
 
-#    def __getitem__(self, idx):
-#        return torch.tensor(self.chunks[idx], dtype=torch.float32)
+    def __getitem__(self, idx):
+        return torch.tensor(self.chunks[idx], dtype=torch.float32)
 
 
-#dataset = ChunkDataset(Config.data_file, chunk_size=35000)
-#loader = DataLoader(dataset, batch_size=Config.batch_size, shuffle=True)
+dataset = ChunkDataset(Config.data_file, chunk_size=35000)
+loader = DataLoader(dataset, batch_size=Config.batch_size, shuffle=True)
 
 
 
@@ -83,8 +83,8 @@ class IIDWindowDataset(Dataset):
 
 
 
-dataset = IIDWindowDataset(Config.data_file, chunk_size=35000, n_samples=100)
-loader = DataLoader(dataset, batch_size=Config.batch_size, shuffle=True)
+#dataset = IIDWindowDataset(Config.data_file, chunk_size=35000, n_samples=100)
+#loader = DataLoader(dataset, batch_size=Config.batch_size, shuffle=True)
 
 
 
