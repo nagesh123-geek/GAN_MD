@@ -26,9 +26,13 @@ transition statistics and implied timescales, while enabling rapid generation of
 that would otherwise require weeks of MD simulation.
 
 
-# Archtecture 
+# Architecture
 
-![Description of figure](figures/GAN_arch.png)
+
+
+# Training and Sampling scheme 
+
+![Training and sampling](figures/GAN_arch.png)
 
 
 # GAN_MD
