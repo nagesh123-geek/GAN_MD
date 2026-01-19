@@ -43,7 +43,7 @@ Ensure you have the following Python packages installed to run the code:
 - scipy  
 - scikit-learn  
 - tqdm
-- 
+  
 # Package version
 - Python 3.12.3
 - pytorch (2.2.0)
@@ -55,7 +55,7 @@ Ensure you have the following Python packages installed to run the code:
 Training and sampling script for various systems are provided in the respective folders.
 
 - For Model 2d model system
-  threewell.py is the training script which trains and saves the model 
+  three_well_GAN.py is the training script which trains and saves the model 
   generate.py is the sampling script from a saved model
 
 # Data 
