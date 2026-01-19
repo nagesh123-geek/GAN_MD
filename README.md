@@ -1,7 +1,7 @@
 # Generative Adversarial Networks for Molecular Time series trajectory generation via implicit distribution learning
 
-Welcome to the repository of the research project titled "Efficient Molecular Dynamics Trajectory Sampling using Generative
-Adversarial Networks".
+Welcome to the repository of the research project titled "Fast Generation of Temporal Molecular Dynamics Trajectories using
+GANs."
 
 # Abstract
 
