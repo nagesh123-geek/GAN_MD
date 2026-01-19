@@ -34,23 +34,35 @@ that would otherwise require weeks of MD simulation.
 
 ![Training and sampling](figures/GAN_arch.png)
 
+# Code Requirements
+Ensure you have the following Python packages installed to run the code:
 
-# GAN_MD
-This repository contains the GAN models developed for Molecular dynamics data for four systems of study, viz, two dimesnional Brownian Motion in three well potential
-Protein Ligand distance trajectory , Trp cage mini protein and alphasynuclein.
+- numpy  
+- pytorch  
+- matplotlib  
+- scipy  
+- scikit-learn  
+- tqdm
+- 
+# Package version
+- Python 3.12.3
+- pytorch (2.2.0)
+- numpy (1.26.4)
+  
+
 
 # Training and Sampling 
-Training and sampling script for various systems are provided in the respective folders
+Training and sampling script for various systems are provided in the respective folders.
+
+- For Model 2d model system
+  threewell.py is the training script which trains and saves the model 
+  generate.py is the sampling script from a saved model
 
 # Data 
 
 In data section , we provided the data for toy two dimensional three well potential Brownian Dynamics for user reproducability.
 
 
-# Requirements 
-pytorch
-numpy
-matplotlib
 
 
 
