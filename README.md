@@ -28,6 +28,7 @@ that would otherwise require weeks of MD simulation.
 
 # Archtecture 
 
+![Description of figure](figures/GAN_arch.png)
 
 
 # GAN_MD
