@@ -5,25 +5,24 @@ GANs."
 
 # Abstract
 
-Molecular dynamics (MD) simulations provide a microscopic description of molecular motion but
-remain severely limited in accessing long timescales and rare events due to their high computational
-cost. Majority of generative machine-learning approaches such as diffusion or normalizing flow have
-shown promise in accelerating configurational sampling, yet these methods are inherently designed
-to generate independent equilibrium snapshots and do not preserve temporal correlations or kinetic
-information by construction. On the other hand Autoregressive sequence models, such as LSTM-
-and transformer-based architectures, can learn time evolution but generate trajectories step-by-
-step, making them susceptible to error accumulation and loss of global dynamical consistency. Here,
-we introduce a complementary paradigm inspired by advances in image and video generation: we
-treat finite MD trajectory segments as high-dimensional objects and learn their joint distribution
-using Generative Adversarial Networks (GANs). Using a Wasserstein GAN with gradient penalty,
-we directly generate entire time-series trajectories that are evaluated holistically, enforcing temporal
-coherence without explicit integration of equations of motion. We demonstrate the generality of this
-approach across systems of increasing complexity, including a two-dimensional three-well model,
-protein-ligand binding in cytochrome P450, latent-space dynamics of the intrinsically disordered
-protein α-synuclein, and conditional trajectory synthesis for the Trp-cage mini-protein. In all
-cases, the generated trajectories reproduce free-energy landscapes and kinetic signatures such as
-transition statistics and implied timescales, while enabling rapid generation of rare-event dynamics
-that would otherwise require weeks of MD simulation.
+Molecular dynamics (MD) simulations yield atomic-level insights into molecular motion but
+struggle to reach the long timescales needed for rare events due to prohibitive computational costs.
+Generative machine-learning models (e.g., diffusion models and normalizing flows) offer a promising
+route to accelerate sampling, yet they generate independent equilibrium snapshots without tem-
+poral correlation or kinetic information. Autoregressive sequence models can learn time evolution
+by producing one frame at a time, but this stepwise generation often accumulates errors and drifts
+from true dynamics. Here, we propose a complementary approach inspired by advances in image
+and video generation: we treat finite MD trajectory segments as high-dimensional objects and
+learn their joint distribution using Generative Adversarial Networks (GANs). Using a Wasserstein
+GAN with gradient penalty, we directly generate entire time-series trajectories in one shot, that
+remain physically coherent over time without explicitly integrating the equations of motion. We
+demonstrate the generality of this method on molecular systems of increasing complexity: a 2D
+triple-well potential energy landscape, a protein–ligand binding process (cytochrome P450), the
+dynamics of an intrinsically disordered protein (α-synuclein) in a latent coordinate space, and even
+the conditional generation of folding trajectories for the Trp-cage mini-protein. In all cases, the
+GAN-generated trajectories closely reproduce the true free-energy landscapes and kinetic signa-
+tures of the systems, while enabling efficient sampling of rare events that would ordinarily require
+months of conventional MD simulation
 
 
 # Architecture
