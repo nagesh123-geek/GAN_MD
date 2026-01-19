@@ -27,7 +27,7 @@ that would otherwise require weeks of MD simulation.
 
 
 # Architecture
-
+![Model architecture](figures/GAN_architecture.png)
 
 
 # Training and Sampling scheme 
