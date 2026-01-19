@@ -10,5 +10,12 @@ Training and sampling script for various systems are provided in the respective 
 In data section , we provided the data for toy two dimensional three well potential Brownian Dynamics for user reproducability.
 
 
+# Requirements 
+pytorch
+numpy
+matplotlib
+
+
+
 
 
